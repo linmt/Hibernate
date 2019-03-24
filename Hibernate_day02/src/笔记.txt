@@ -1,0 +1,17 @@
+测试对象的三种状态
+test1.fun1
+
+持久态对象能够自动更新数据库
+test1.fun3
+
+一级缓存
+test1.fun4
+
+Query
+test1.fun5
+
+Criteria
+test1.fun6
+
+SQLQuery
+test1.fun7

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="demo.Customer" table="cst_customer" >
+        <id name="cust_id">
+            <!--<id name="cust_id" column="cust_name">-->
+            <generator class="native"/>
+        </id>
+
+        <!--<version name="version" column="version"/>-->
+
+        <property name="cust_name" column="cust_name" />
+        <property name="cust_source" column="cust_source"/>
+        <property name="cust_industry" column="cust_industry"/>
+        <property name="cust_level" column="cust_level"/>
+        <property name="cust_phone" column="cust_phone"/>
+        <property name="cust_mobile" column="cust_mobile"/>
+
+        <!--
+            组件映射：把多个属性打包在一起当一个属性使用，用来把类的粒度变小。
+            <component name="属性，这里指对象">
+                 <property name="name1"></property>
+                 <property name="name2"></property>
+             </component>
+         -->
+
+        <!--
+            <join>:一个对象映射多个表，该元素必须放在所有<property>之后。
+            <join table="tbl_test：子表名">
+                <key column="uuid：子表主键"></key>
+            <property name="name1：对象属性" column="name：子表字段"></property>
+        </join>
+         -->
+    </class>
+</hibernate-mapping>

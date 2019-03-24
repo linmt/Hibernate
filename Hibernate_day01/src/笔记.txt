@@ -1,0 +1,11 @@
+案例一
+src\main\java\demo1\Customer.java
+D:\Workspaces_for_IDEA\Hibernate\src\main\resources\Customer.hbm.xml
+D:\Workspaces_for_IDEA\Hibernate\src\main\resources\hibernate.cfg.xml
+D:\Workspaces_for_IDEA\Hibernate\src\test\java\HibernateDemo1.java
+
+SessionFactory打印日志
+D:\Workspaces_for_IDEA\Hibernate\src\main\resources\log4j.properties
+
+工具类的使用
+HibernateUtils   HibernateDemo2
