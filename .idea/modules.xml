@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/Hibernate.iml" filepath="$PROJECT_DIR$/Hibernate.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hibernate_day01/Hibernate_day01.iml" filepath="$PROJECT_DIR$/Hibernate_day01/Hibernate_day01.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hibernate_day02/Hibernate_day02.iml" filepath="$PROJECT_DIR$/Hibernate_day02/Hibernate_day02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hibernate_day03/Hibernate_day03.iml" filepath="$PROJECT_DIR$/Hibernate_day03/Hibernate_day03.iml" />
     </modules>
   </component>
 </project>

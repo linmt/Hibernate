@@ -33,6 +33,9 @@
         <!--每3000秒检查所有连接池中的空闲连接 以秒为单位-->
         <property name="c3p0.idle_test_period">3000</property>
 
+        <!--配置session绑定本地线程-->
+        <property name="hibernate.current_session_context_cLass">thread</property>
+
         <mapping resource="Customer.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>

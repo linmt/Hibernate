@@ -1,17 +1,25 @@
 测试对象的三种状态
-test1.fun1
+test1.fun1()
 
 持久态对象能够自动更新数据库
-test1.fun3
+test1.fun3()
 
 一级缓存
-test1.fun4
+test1.fun4()
 
 Query
-test1.fun5
+test1.fun5()
 
 Criteria
-test1.fun6
+test1.fun6()
 
 SQLQuery
-test1.fun7
+test1.fun7()
+
+快照区和缓存区的变化
+test1.snapshot()
+
+session绑定本地线程，使用时不需要session.close()
+hibernate.cfg.xml
+HibernateUtils.getCurrentSession()
+test1.CurrentSession()

@@ -20,4 +20,9 @@ public class HibernateUtils {
     public static Session openSession(){
         return sf.openSession();
     }
+
+    // 从ThreadLocal类中获取到session的对象
+    public static Session getCurrentSession(){
+        return sf.getCurrentSession();
+    }
 }

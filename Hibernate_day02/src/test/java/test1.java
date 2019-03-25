@@ -96,6 +96,31 @@ public class test1 {
     }
 
     @Test
+    public void snapshot(){
+        Session session = HibernateUtils.openSession();
+        Transaction tr = session.beginTransaction();
+
+        Customer c = session.get(Customer.class, 1l);
+        c.setCust_name("老王");
+
+        tr.commit();
+        session.close();
+    }
+
+    @Test
+    public void CurrentSession(){
+        Session session = HibernateUtils.getCurrentSession();
+        Transaction tr = session.beginTransaction();
+
+        Customer c = session.get(Customer.class, 1l);
+        c.setCust_name("dawang");
+        session.save(c);
+
+        tr.commit();
+//        session.close();
+    }
+
+    @Test
     //测试Query
     public void fun5(){
         Session session = HibernateUtils.openSession();

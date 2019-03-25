@@ -1,0 +1,2 @@
+导入的jar包是22-Hibernate V5.0 框架(共59集)\03.表操作-多对多配置\资料\代码\hibernate_day03\lib中的
+
