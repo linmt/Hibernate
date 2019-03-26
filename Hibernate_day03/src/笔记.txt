@@ -1,2 +1,31 @@
 导入的jar包是22-Hibernate V5.0 框架(共59集)\03.表操作-多对多配置\资料\代码\hibernate_day03\lib中的
 
+向客户 和 联系人中同时保存数据
+test1.demo1()
+
+一对多关系只保存一边是否可以
+test1.demo2()
+
+保存客户级联联系人
+test1.demo3()
+
+保存联系人级联客户
+test1.demo4()
+
+测试对象导航
+test1.demo5()
+
+级联删除
+test1.demo6()  demo7()
+
+inverse的配置
+createData()  demo8()
+
+区分cascade和inverse的区别
+demo9()
+
+多对多关联映射
+Role.java
+User.java
+Role.hbm.xml
+User.hbm.xml

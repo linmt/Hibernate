@@ -22,8 +22,11 @@
 				* cascade：级联
 				* inverse：放弃外键维护权。
 		-->
-		<!--<set name="linkMans" cascade="save-update" inverse="true">-->
-		<set name="linkMans" inverse="true">
+		<!--如果要同时级联保存更新、级联删除，写法如下：<set name="linkMans" cascade="save-update,delete">-->
+		<set name="linkMans" cascade="save-update,delete" inverse="true">
+		<!--<set name="linkMans" cascade="save-update">-->
+		<!--<set name="linkMans" cascade="delete">-->
+		<!--<set name="linkMans">-->
 			<!--
 				 key标签
 					* column：多的一方的外键的名称。

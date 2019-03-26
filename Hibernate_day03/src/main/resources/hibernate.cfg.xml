@@ -19,7 +19,7 @@
         <!-- 格式化SQL -->
         <property name="hibernate.format_sql">true</property>
         <!-- 自动创建表 -->
-        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.hbm2ddl.auto">create</property>
 
         <!-- 配置C3P0连接池 -->
         <property name="connection.provider_class">org.hibernate.connection.C3P0ConnectionProvider</property>
@@ -38,5 +38,7 @@
 
         <mapping resource="Customer.hbm.xml"/>
         <mapping resource="LinkMan.hbm.xml"/>
+        <mapping resource="User.hbm.xml"/>
+        <mapping resource="Role.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>
