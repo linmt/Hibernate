@@ -24,8 +24,24 @@ createData()  demo8()
 区分cascade和inverse的区别
 demo9()
 
-多对多关联映射
+多对多关联映射+只保存一边测试
 Role.java
 User.java
 Role.hbm.xml
 User.hbm.xml
+test2.demo1()
+
+多对多的级联保存：保存用户级联保存角色
+test2.demo2()
+
+多对多的级联保存：保存角色级联保存用户
+test2.demo3()
+
+多对多的级联删除
+test2.demo4()   demo5()
+
+给用户选择角色
+demo6()
+
+给用户改选角色
+demo7()

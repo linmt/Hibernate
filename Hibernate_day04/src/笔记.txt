@@ -1,0 +1,8 @@
+HQL检索
+test1
+
+QBC检索
+test2
+
+抓取策略——延迟加载
+test3

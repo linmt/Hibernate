@@ -14,8 +14,10 @@
 		<property name="user_password" column="user_password"/>
 		<property name="user_state" column="user_state"/>
 		<!-- 建立与角色的多对多的映射关系 -->
-		<!--<set name="roles" table="sys_user_role" cascade="save-update,delete">-->
-		<set name="roles" table="sys_user_role">
+		<!--<set name="roles" table="sys_user_role" cascade="save-update,delete" inverse="true">-->
+		<!--<set name="roles" table="sys_user_role">-->
+		<set name="roles" table="sys_user_role" cascade="save-update,delete">
+		<!--<set name="roles" table="sys_user_role" cascade="save-update" inverse="true">-->
 			<key column="user_id"/>
 			<many-to-many class="demo.Role" column="role_id"/>
 		</set>
