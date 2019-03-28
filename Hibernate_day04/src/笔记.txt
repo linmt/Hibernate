@@ -6,3 +6,12 @@ test2
 
 抓取策略——延迟加载
 test3
+
+在<set>上的fetch和lazy
+test4
+
+many-to-one上的fetch和lazy测试
+test5
+
+批量抓取
+test6

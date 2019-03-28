@@ -1,5 +1,4 @@
 import demo.Customer;
-import org.hibernate.Hibernate;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.junit.Test;
@@ -18,7 +17,7 @@ public class test3 {
         Transaction tx = session.beginTransaction();
 
         Customer customer = session.load(Customer.class, 1l);
-        Hibernate.initialize(customer);
+//        Hibernate.initialize(customer);
         System.out.println(customer);
 
         tx.commit();

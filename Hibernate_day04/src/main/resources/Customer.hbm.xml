@@ -3,7 +3,7 @@
     "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-	<class name="demo.Customer" table="cst_customer">
+	<class name="demo.Customer" table="cst_customer" batch-size="3">
 		<!-- 建立OID与主键映射 -->
 		<id name="cust_id" column="cust_id">
 			<generator class="native"/>
@@ -26,7 +26,7 @@
 		<!--<set name="linkMans" cascade="save-update,delete" inverse="true">-->
 		<!--<set name="linkMans" cascade="save-update">-->
 		<!--<set name="linkMans" cascade="delete">-->
-		<set name="linkMans">
+		<set name="linkMans" batch-size="3">
 			<!--
 				 key标签
 					* column：多的一方的外键的名称。
